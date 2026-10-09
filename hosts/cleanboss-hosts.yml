@@ -1,0 +1,44 @@
+generated: '2026-10-09'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 2
+  own: 2
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - website
+hosts:
+- host: api.cleanboss.co
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: cleanboss.co
+  role: api
+  relation: own
+- host: www.cleanboss.co
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - TermsOfService
+  - PrivacyPolicy
+  - Newsroom
+  - Login
+  - Website
+  serves:
+  - docs
+  - cdn
+  - hosting
+  platform: shopify.com
+  vendor: cloudflare
+  registrable_domain: cleanboss.co
+  role: website
+  relation: own
