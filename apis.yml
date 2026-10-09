@@ -1,7 +1,6 @@
 aid: cleanboss
 name: CleanBoss
-description: 'CleanBoss is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'CleanBoss is a consumer products brand offering non‑toxic, botanically‑derived cleaning solutions. Founded by Joy Mangano and Armando Christian Pérez, the company sells multi‑surface cleaners, laundry sheets, fruit‑and‑veggie washes, and other eco‑friendly products through its Shopify storefront. The brand emphasizes safety, effectiveness, and a “cleaning revolution” with a 100 % money‑back guarantee and free shipping on orders over $45.'
 url: https://raw.githubusercontent.com/api-evangelist/cleanboss/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +11,10 @@ created: '2026-10-08'
 modified: '2026-10-08'
 tags:
 - Company
+- Consumer Products
+- Cleaning
+- Eco-friendly
+- E‑commerce
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +22,7 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/cleanboss-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.cleanboss.co
